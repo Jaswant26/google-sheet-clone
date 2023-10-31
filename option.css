@@ -1,0 +1,53 @@
+.tools{
+    position: sticky;
+    top: 0;
+}
+.options{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    flex-direction: start;
+    padding: 10px 20px;
+    width: 100vw ;
+    margin: auto;
+    background-color: #edf2fa;
+}
+.options input , .options select{
+    border: none;
+    cursor: pointer;
+}
+.options .material-icons {
+    font-size: 24px !important;
+}
+.bottom-section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+    position: static;
+    top: 0;
+    z-index: 100;
+}
+.bottom-section input{
+    flex-grow: 1;
+    font-size: 20px;
+    position: static;
+    top: 0;
+    border: none;
+}
+#active-cell{
+    background-color:white;
+    padding: 5px 20px;
+}
+.option-btn{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+.option-btn:hover {
+    background-color: #ededed;
+}
+.formula-icon {
+    width: 1.2rem;
+}
