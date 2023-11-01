@@ -33,6 +33,7 @@ function createRow(rowNumber) {
     row.appendChild(cell);
     cell.id = String.fromCharCode(64 + i) + " " + rowNumber;
     cell.addEventListener("focus", onCellFocus);
+    cell.addEventListener("input", onFormChange);
   }
   mainContainer.appendChild(row);
 }

@@ -1,20 +1,20 @@
 .tools{
     position: sticky;
     top: 0;
+    width: 100% ;
 }
 .options{
     display: flex;
     align-items: center;
     gap:15px;
-    flex-direction: start;
     padding: 10px 20px;
-    width: 100vw ;
+    width: 100% ;
     margin: auto;
     background-color: #edf2fa;
 }
 .options input , .options select{
-    border: none;
     cursor: pointer;
+    width: 90px;
 }
 .options .material-icons {
     font-size: 24px !important;
@@ -22,18 +22,12 @@
 .bottom-section{
     display: flex;
     gap: 20px;
-    align-items: center;
     margin: 10px;
-    font-size: 20px;
-    position: static;
-    top: 0;
-    z-index: 100;
+    align-items: center;
 }
 .bottom-section input{
     flex-grow: 1;
-    font-size: 20px;
-    position: static;
-    top: 0;
+    padding: 10px;
     border: none;
 }
 #active-cell{
@@ -50,4 +44,29 @@
 }
 .formula-icon {
     width: 1.2rem;
+}
+.hidden-input {
+    width: 0 !important; 
+    height: 0;
+    border: none ;
+}
+.hidden-input:checked + label {
+    background-color: #ededed;
+}
+.text-align{
+    display: flex;
+}
+.impot-export-btn{
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+.impot-export-btn:hover{
+    background-color:#ededed ;
+    cursor: pointer;
+}
+@media screen and (max-width:663px){
+    .options{
+        flex-direction: row;
+    }
 }
