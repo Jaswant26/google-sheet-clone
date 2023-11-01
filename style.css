@@ -52,7 +52,7 @@ body{
     background-color: grey;
   }
   .main {
-    height: 100px;
+    height: 100vh;
   }
   
   .row {
@@ -62,3 +62,13 @@ body{
     border: 1px solid #000;
     height: 30px;
   }
+  .sheet-actions-cont {
+    height: 2rem;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    gap: 1;
+    background-color: #ecf0f1;
+}
