@@ -18,6 +18,13 @@
     <link rel="stylesheet" href="save.css" />
   </head>
   <body>
+    <div class="page-actions-cont">
+      <div class="page-action">File</div>
+      <div class="page-action selected-page-action">Home</div>
+      <div class="page-action">Insert</div>
+      <div class="page-action">Layout</div>
+      <div class="page-action">Help</div>
+  </div>
     <section class="tools">
       <form class="options" id="form" onchange="onFormChange()">
         <!-- <span class="material-icons copy"> content_copy </span>
@@ -140,7 +147,7 @@
           class="formula-icon"
           src="https://img.icons8.com/ios/50/000000/formula-fx.png"
         />
-        <input type="text" oninput="onChangeFontSize()" class="expression" />
+        <input type="text" class="formula-bar" />
       </div>
     </section>
     <section class="root-container">
@@ -150,14 +157,12 @@
         <div class="main"></div>
       </div>
     </section>
-    <div class="sheet-actions-cont">
       <div class="sheet-add-icon">
         <span class="material-icons"> post_add </span>
-      </div>
-      <div class="sheets-folder-cont"></div>
     </div>
     <script src="options.js"></script>
     <script src="./index.js"></script>
     <script src="import-export.js"></script>
+    <script src="./formula.js"></script>
   </body>
 </html>

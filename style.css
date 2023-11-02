@@ -8,6 +8,32 @@ body{
    width: 100vw;
     height: 100vh;
 }
+.page-actions-cont {
+  height: 3rem;
+  background-color: #218c74;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1rem;
+}
+
+.page-action{
+  width: 3.5rem;
+  height: 2rem;
+  text-align: center;
+  color: #f1f2f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.page-action:hover{
+  background-color: #f1f2f6;
+  color: #218c74;
+}
+.selected-page-action{
+  background-color: #f1f2f6;
+  color: #218c74;
+}
 .root-container {
     width: 100vw;
     height: 80vh;
@@ -62,13 +88,17 @@ body{
     border: 1px solid #000;
     height: 30px;
   }
-  .sheet-actions-cont {
+  .sheet-add-icon {
     height: 2rem;
-    background-color: lightcoral;
-    display: flex;
-    align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    gap: 1;
-    background-color: #ecf0f1;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    margin: 0px;
+    left: 0px;
+    background-color: white;
+}
+
+ .sheet-add-icon>span{
+  padding: 5px;
+  margin-bottom: 5px;
 }
