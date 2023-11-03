@@ -14,8 +14,14 @@ body{
   display: flex;
   align-items: flex-end;
   padding-left: 1rem;
+  position: sticky;
+  top: 0;
 }
-
+.tools{
+  position: sticky;
+  top: 0;
+  overflow:hidden;
+}
 .page-action{
   width: 3.5rem;
   height: 2rem;
@@ -91,11 +97,12 @@ body{
   .sheet-add-icon {
     height: 2rem;
     width: 100vw;
-    position: fixed;
     bottom: 0px;
     margin: 0px;
     left: 0px;
     background-color: white;
+    position: relative;
+    bottom: 0px;
 }
 
  .sheet-add-icon>span{
